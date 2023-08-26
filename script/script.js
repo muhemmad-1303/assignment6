@@ -6,8 +6,11 @@ registerpage.classList.toggle('Visible');
 const loginpage=document.querySelector('.mainlogin');
 const signin=document.querySelector('#signin');
 signin.addEventListener('click',function(){
+  document.querySelectorAll('.error').forEach(data=>data.textContent="");
   registerpage.classList.toggle('Visible');
   loginpage.classList.toggle('Visible');
+  clear();
+  
 })
 
 // functionality when craetebutton is clicked
@@ -238,7 +241,11 @@ const userpassword=document.getElementById('passwordlogin');
 const login=document.getElementById('login');
 const loginUserError=document.getElementById('loginUserError');
 const passwordError=document.querySelector('#PasswordError');
-
+function clear(){
+  loginUserError.textContent="";
+  passwordError.textContent="";
+  console.log("hello");
+}
 
 login.addEventListener('click',userExist);
 function userExist(){
