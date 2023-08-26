@@ -253,6 +253,13 @@ button{
     margin:20px auto;
     text-align: center;
 }
+#signin{
+    color:#1877f2;
+    text-decoration: underline;
+    font-size: smaller;
+    text-align: center; 
+    cursor: pointer;
+}
 
 #createAccount{
     background-color: #00a400;

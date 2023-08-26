@@ -4,6 +4,11 @@ todopage.classList.toggle('Visible');
 const registerpage=document.querySelector('.mainregister');
 registerpage.classList.toggle('Visible');
 const loginpage=document.querySelector('.mainlogin');
+const signin=document.querySelector('#signin');
+signin.addEventListener('click',function(){
+  registerpage.classList.toggle('Visible');
+  loginpage.classList.toggle('Visible');
+})
 
 // functionality when craetebutton is clicked
 const createButton=document.querySelector('#createAccount');

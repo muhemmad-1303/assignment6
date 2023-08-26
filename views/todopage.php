@@ -71,6 +71,7 @@
                 </div>
                 <span class="gendererror error"></span>
                 <div id="sub">Sign Up</div>
+                <div id="signin">Already have an account?SignIn</div>
             </div>
             </form>
         </div>
