@@ -21,15 +21,6 @@ if(isset($data1['error'])){
      
     }
 
-// if(isset($data2['emailerror'])){
-//         $statement=$pdo->prepare("select * from user where email ='{$data2['email']}'");
-//         $statement->execute();
-//         $res=$statement->fetch(PDO::FETCH_ASSOC);
-//         if($res){
-//          $error["email"]="email has taken";
-//         }
-//         $response['emailerror']=$error["email"]?? '';
-//        } 
 
 header('Content-Type: application/json');
 echo json_encode($response);

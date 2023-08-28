@@ -294,12 +294,7 @@ function userExist(){
     userpassword.value="";
    
   }
-  else if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(userpassword.value)){
-    error.passworderror="needs upper and lowercase letters,numbers,special characters,and more than 7 characters";
-    passwordError.textContent=error.passworderror;
-    userpassword.value="";
-    
-  }
+ 
   
 
 
