@@ -84,7 +84,7 @@
                 <form id="form">
                 <input type="text" name="task" id="task" >
                 <div id="save">
-                <input type="submit" value="AddTask" id="addbtn">
+                
                 </div>
                 </form>
             

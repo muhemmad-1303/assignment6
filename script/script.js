@@ -345,13 +345,20 @@ logout.addEventListener('click',function(){
 })
 
 function todo(){
+
+const addparent=document.getElementById('save');
+addparent.innerHTML="";
+const addTask=document.createElement('div');
+addTask.textContent="AddTask";
+addTask.id="addbtn";
+addparent.appendChild(addTask);
 const token=document.cookie.split('=');
 document.querySelector('.todocardbody').innerHTML=" ";
 fetchtask({item:""});
 const task=document.getElementById('task');
-const addTask=document.getElementById('addbtn');
 const head=document.querySelector('.todocardhead');
 const modal=document.querySelector('.modal')
+
 addTask.addEventListener('click',add);
 function fetchtask(item){
   let flag=item.message;
@@ -517,12 +524,13 @@ function handleedit(idn){
   });
  }
 
-function add(event){
-    event.preventDefault();
+function add(){
+    
     const obj={
         username:token[1],
         task:task.value,
     }
+    console.log(token[1]);
     fetch('../controlls/add.php', {
         method: 'POST',
         headers: {
@@ -594,6 +602,3 @@ function modaldlt(idn){
 }
 
 }
-
-
-
